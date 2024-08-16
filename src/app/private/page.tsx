@@ -7,13 +7,12 @@ import { BarLoader } from "react-spinners";
 import Error from "../components/Error";
 import useFetch from "../hooks/use-fetch";
 import { getUrls } from "../db/apiUrls";
-import { UrlState } from "../hooks/use-fetch";
 
 export default async function PrivatePage() {
   const supabase = createClient();
 
-  const { user } = UrlState();
-  const { loading, error, data } = useFetch(getUrls, user?.id);
+  // const { user } = UrlState();
+  // const { loading, error, data } = useFetch(getUrls, user?.id);
 
   const { data: datae, error: errore } = await supabase.auth.getUser();
   if (errore || !datae?.user) {
