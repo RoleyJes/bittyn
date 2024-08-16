@@ -1,14 +1,16 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[url('/asset/Footer-BG.png')] bg-no-repeat bg-cover bg-center py-20 px-6 lg:px-12 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-6 gap-12 md:gap-3 text-center md:text-start">
           <div className="md:col-span-2">
-            <a
-              href="#body"
+            <Link
+              href="/"
               className="font-bold tracking-widest text-2xl text-white hover:text-[rgb(233,245,255)] italic transition-all">
               BITTYN
-            </a>
+            </Link>
           </div>
 
           <div>
@@ -51,8 +53,11 @@ export default function Footer() {
 
           <div>
             <figure className="flex items-center justify-center md:justify-start gap-6">
-              <a href="" className=" hover:scale-125 transition-all">
-                <img src="asset/medium.png" alt="" />
+              <a
+                href="https://www.linkedin.com/in/jessica-imoesemi-11710b179/"
+                target="d_blank"
+                className=" hover:scale-125 transition-all">
+                <img src="asset/linkedin.png" alt="" />
               </a>
               <a
                 href="https://x.com/jessey_ca"

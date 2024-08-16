@@ -4,7 +4,12 @@ import CallToAction from "./components/CallToAction";
 
 export default function Home() {
   return (
-    <main>
+    <main id="body" className="relative">
+      <a
+        href="#body"
+        className="w-12 h-12 rounded-full bg-[#e93266] flex justify-center items-center text-white fixed bottom-3 right-3 z-50 font-bold">
+        &uarr;
+      </a>
       <section className="pt-36 lg:pt-56 pb-16 lg:pb-36 px-4 relative bg-[url('/asset/main-banner-bg.png')] bg-no-repeat bg-cover bg-center">
         <Navbar />
 
@@ -29,7 +34,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Services */}
       <section className="px-4 py-12 md:py-28">
         <div className="max-w-6xl mx-auto">
@@ -92,9 +96,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <CallToAction />
-
       <Footer />
     </main>
   );
