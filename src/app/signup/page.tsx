@@ -261,17 +261,6 @@ export default function SignupPage() {
                   />
                   {errors.password && <Error message={errors.password} />}
                 </div>
-                <div className="mb-6 grid grid-cols-1">
-                  <label htmlFor="confirm_password" className="mb-2">
-                    Confirm Password
-                  </label>
-                  <input
-                    type="password" // Change input type to password
-                    name="confirm_password"
-                    placeholder="Re-enter password"
-                    className="rounded-[100px] border border-[rgba(141,141,174,0.6)] focus:outline-[#2161e0] text-sm py-3 px-6"
-                  />
-                </div>
               </div>
 
               <button
