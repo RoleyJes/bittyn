@@ -68,7 +68,7 @@ export default async function PrivatePage() {
                   </div>
                 </div>
 
-                <div>
+{/*                 <div>
                   <div className=" grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
                     <div>
                       <div className=""></div>
@@ -82,7 +82,7 @@ export default async function PrivatePage() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* <Error message={error.message} /> */}
               </div>
