@@ -55,7 +55,7 @@ export default async function PrivatePage() {
                 </button>
               </div>
 
-              <div className="mt-32 md:mt-24 bg-white px-8 shadow-lg">
+              <div className="mt-32 md:mt-24 bg-white px-8 shadow-lg pb-6">
                 {true && <BarLoader width={"100%"} color="#101044" />}
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="px-4 py-3 border-2">
